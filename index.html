@@ -6,9 +6,9 @@
       body {
         font-family: sans-serif;
         text-align: center;
+        background-color: aqua;
       }
       h1{
-        color: green;
         font-style: italic;
         font-size: 3em;
       }
@@ -60,7 +60,7 @@
       // TODO: execute this loop the number of times user requested
       while(counter <= howMany){
         console.log("Wheee! This is the ", counter, " time we've done this!");
-        counter = counter + 1;
+        
         
         // find value of counter modulo length of sources array-
         // this value will increase by one on each iteration of the loop,
@@ -70,11 +70,14 @@
         theImg.setAttribute("src", imageSources[theOne]);  
         
         // TODO: increment the counter    
+        counter = counter + 1;
       }    
       
       // EXTRA CHALLENGES:    
       // 1. Using JS, add a class of "red" to the <h1>.    
-      //    This only needs to be done once, so code should be outside loop.    
+      //    This only needs to be done once, so code should be outside loop.
+      //document.getElementById("h1").className = "red"; (FAILED)
+      
       // 2. Execute the loop only half as many times, or twice as many times, as the user requested.    
       // 3. Add a pause to each loop, so user can see each image as it cycles past.    
       //    This is a difficult one
